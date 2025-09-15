@@ -7,7 +7,7 @@ This website is built automatically using GitHub Pages. The main page you're rea
 ## Table of Contents
 
 1.  **[Hyperparameter gridsearch](./1-hypertuning-gridsearch/summary.md)**
-    * Summary of the first week
+    * Dit is een test
 1.  **[Hyperparameter mlflow](./2-hypertuning-mlflow/summary.md)**
     * Summary of the second week
 1.  **[Hyperparameter rnn](./3-hypertuning-rnn/summary.md)**
