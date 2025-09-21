@@ -7,9 +7,9 @@ This website is built automatically using GitHub Pages. The main page you're rea
 ## Table of Contents
 
 1.  **[Hyperparameter gridsearch](./1-hypertuning-gridsearch/summary.md)**
-    * Dit is een test
+    * I found the assignment very educational, especially training a feed-forward neural network. Trying out the Adam optimizer, CrossEntropyLoss, and a ReduceLROnPlateau scheduler was also interesting. I quickly discovered that larger networks achieved higher accuracy compared to smaller ones. However, with larger networks you have to be careful to avoid overfitting.
 1.  **[Hyperparameter mlflow](./2-hypertuning-mlflow/summary.md)**
-    * Summary of the second week
+    * I studied the material but due to family circumstances i have not be able to try it out.
 1.  **[Hyperparameter rnn](./3-hypertuning-rnn/summary.md)**
     * Summary of the third week
 1.  **[Hyperparameter ray](./4-hypertuning-ray/summary.md)**
