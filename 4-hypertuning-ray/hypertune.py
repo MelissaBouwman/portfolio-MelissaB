@@ -14,15 +14,15 @@ class ConfigurableCNN(nn.Module):
     def __init__(self, config: dict):
         super().__init__()
         layers = []
-        in_channels = 1 # FashionMNIST is zwart-wit
+        in_channels = 1 
         num_filters = config.get("num_filters", 32)
         
-        # We bouwen de lagen dynamisch op
+    
         for _ in range(config.get("num_conv_layers", 2)):
             layers.append(nn.Conv2d(in_channels, num_filters, kernel_size=3, padding=1))
             
-            # --- HYPOTHESE TEST ---
-            # We testen of Batchnorm helpt bij hoge learning rates
+            
+            # testen of Batchnorm helpt bij hoge learning rates
             if config.get("use_batchnorm", False):
                 layers.append(nn.BatchNorm2d(num_filters))
                 
@@ -60,7 +60,7 @@ def load_data(data_dir):
             root=data_dir, train=True, download=True, transform=transform
         )
         
-    # We gebruiken een kleinere subset (10k train, 5k valid) voor snelheid
+    #  gebruiken een kleinere subset (10k train, 5k valid) voor snelheid
     total_len = len(train_data)
     train_len = 10000
     val_len = 5000
