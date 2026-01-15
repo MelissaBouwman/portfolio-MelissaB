@@ -16,15 +16,15 @@ We benchmarked 5 different models and identified the top two performers based on
 - OpenAI/GPT-OSS-120B (131k context window)
   
 
-- # Advanced prompt engineering: we significantly improved performance by refining the prompt structure:
+- Advanced prompt engineering: we significantly improved performance by refining the prompt structure:
 
-- # Context injection: enriched the prompt with the rechtsfeiten definitions and added specific rules (e.g., synonyms).
+- Context injection: enriched the prompt with the rechtsfeiten definitions and added specific rules (e.g., synonyms).
 
-- # Noise Reduction: instructed the model to ignore unnecessary historical information within the deeds.
+- Noise reduction: instructed the model to ignore unnecessary historical information within the deeds.
 
-- # Hallucination Prevention: built in an "escape mechanism" to ensure the model does not invent facts if the confidence is low.
+- Hallucination prevention: built in an "escape mechanism" to ensure the model does not invent facts if the confidence is low.
 
-- # Configuration: We configured the system to target the long tail (threshold < 20 occurrences) with a context limit of 30,000 tokens to balance performance and speed.
+- # Configuration: we configured the system to target the long tail (threshold < 20 occurrences) with a context limit of 30,000 tokens to balance performance and speed.
 
 ### Results 
 We successfully established a workflow that allows the system to recognize rare legal facts that the main model misses, with the Qwen and OpenAI models achieving comparable F1 scores (Micro F1 ~0.66).
