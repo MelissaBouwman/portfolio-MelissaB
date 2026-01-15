@@ -7,7 +7,9 @@ This website is built automatically using GitHub Pages. The main page you're rea
 ## Table of Contents
 
 1.  **[Hyperparameter gridsearch](./1-hypertuning-gridsearch/summary.md)**
-# Hypothesis
+
+
+Hypothesis
 
 I expected that increasing the number of units and/or epochs would improve accuracy. But there is a point where overfitting is going to occur. Therefore, i als expected that small learning rates yield more stable convergence than larger learning rate.
 
