@@ -7,7 +7,7 @@ With the Straattaal set I created my own dog name generator. This AI model will 
 
 It was a really nice project and i learned a lot, maybe in the future i will use it to name my dog(s) :P
 
-
+the link of my repo: https://github.com/MelissaBouwman/MADS-deployment
 
 [Go back to Homepage](../README.md)
 
