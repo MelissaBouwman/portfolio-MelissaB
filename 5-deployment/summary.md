@@ -1,4 +1,4 @@
-# A! Dog name generator
+# AI Dog name generator
 With the Straattaal set I created my own dog name generator. This AI model will come up with several new dog names generated based on a list with the most common dog names. 
 
 <img width="1382" height="590" alt="image" src="https://github.com/user-attachments/assets/7ec1fa05-8f07-4420-94d3-a57253de59c5" />
