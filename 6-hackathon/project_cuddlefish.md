@@ -1,6 +1,6 @@
 ### AI Challenge - Kadaster
 
-he Kadaster registers over 100 types of legal events (rechtsfeiten), such as mortgages, seizures, or sales. However, recognizing these automatically is a major challenge because notaries use unstructured text without a fixed format. While standard models successfully identify common events, they fail on the "Long Tail"—rare legal facts that occur infrequently (e.g., fewer than 20 times), making them impossible to learn via traditional training.
+The Kadaster registers over 100 types of legal events (rechtsfeiten), such as mortgages, seizures, or sales. However, recognizing these automatically is a major challenge because notaries use unstructured text without a fixed format. While standard models successfully identify common events, they fail on the "Long Tail"—rare legal facts that occur infrequently (e.g., fewer than 20 times), making them impossible to learn via traditional training.
 
 The Kadaster dataset suffers from a "Long Tail" distribution. While standard models (Regex/Neural) handle common "rechtsfeiten" well, they fail on rare legal facts where training data is scarce (fewer than 20 examples).
 
