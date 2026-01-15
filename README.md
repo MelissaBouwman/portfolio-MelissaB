@@ -6,6 +6,9 @@ This website is built automatically using GitHub Pages. The main page you're rea
 
 ## Table of Contents
 
+Repo deployment: https://github.com/MelissaBouwman/MADS-deployment
+
+
 1.  **[Hyperparameter gridsearch](./1-hypertuning-gridsearch/summary.md)**
 
 
