@@ -1,16 +1,34 @@
-# Project Cuddlefish: AI-Powered Camouflage
+### AI Challenge - Kadaster
 
-Our hackathon project aimed to solve a critical, emerging problem: how can we help cuttlefish blend in more effectively?
-## The Goal
+he Kadaster registers over 100 types of legal events (rechtsfeiten), such as mortgages, seizures, or sales. However, recognizing these automatically is a major challenge because notaries use unstructured text without a fixed format. While standard models successfully identify common events, they fail on the "Long Tail"—rare legal facts that occur infrequently (e.g., fewer than 20 times), making them impossible to learn via traditional training.
 
-The primary objective was to build a machine learning model that could analyze an image of a cuttlefish's surroundings (e.g., sand, coral, seaweed) and generate a predicted optimal skin pattern for camouflage.
-## The Model
+The Kadaster dataset suffers from a "Long Tail" distribution. While standard models (Regex/Neural) handle common "rechtsfeiten" well, they fail on rare legal facts where training data is scarce (fewer than 20 examples).
 
-We used a convolutional neural network (CNN), specifically a U-Net architecture, which is well-suited for image-to-image translation tasks. The model was trained on a synthetic dataset of 10,000 environmental textures and corresponding camouflage patterns.
-## Outcome
+### Solution
+To solve this, Christel and I developed a Zero-Shot Learning approach specifically for these rare cases. instead of training on examples, we used Large Language Models (LLMs) to recognize facts based on their legal descriptions.
 
-The model achieved a 92% "believability score" as rated by a panel of very confused crabs. It was particularly effective at replicating sandy and pebbled textures.
+### Methodology & Achievements
 
-You can find all the code in the-link-to-your-repo-here
+We benchmarked 5 different models and identified the top two performers based on context handling and accuracy:
+
+- Qwen/Qwen3-30B-A3B-Thinking (262k context window)
+
+- OpenAI/GPT-OSS-120B (131k context window)
+  
+
+- # Advanced prompt engineering: we significantly improved performance by refining the prompt structure:
+
+- # Context injection: enriched the prompt with the rechtsfeiten definitions and added specific rules (e.g., synonyms).
+
+- # Noise Reduction: instructed the model to ignore unnecessary historical information within the deeds.
+
+- # Hallucination Prevention: built in an "escape mechanism" to ensure the model does not invent facts if the confidence is low.
+
+- # Configuration: We configured the system to target the long tail (threshold < 20 occurrences) with a context limit of 30,000 tokens to balance performance and speed.
+
+### Results 
+We successfully established a workflow that allows the system to recognize rare legal facts that the main model misses, with the Qwen and OpenAI models achieving comparable F1 scores (Micro F1 ~0.66).
+
+You can find all the code in (https://github.com/christelvanharen/MADS_hackaton)
 
 [Go back to Homepage](../README.md)
