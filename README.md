@@ -7,7 +7,8 @@ This website is built automatically using GitHub Pages. The main page you're rea
 ## Table of Contents
 
 1.  **[Hyperparameter gridsearch](./1-hypertuning-gridsearch/summary.md)**
-    * Hypothesis
+
+* Hypothesis
 
 I expected that increasing the number of units and/or epochs would improve accuracy. But there is a point where overfitting is going to occur. Therefore, i als expected that small learning rates yield more stable convergence than larger learning rate.
 
@@ -36,7 +37,8 @@ A network (125-256 units) with a learning rate 1e-3 balances speed and good gene
 Tensorbord comes in really handy for monitoring convergence trends.
 
 2.  **[Hyperparameter mlflow](./2-hypertuning-mlflow/summary.md)**
-    * Hypothesis: I expected that adding a dropout would reduce the overfitting problem, especially in bigger networks with more filters/dense units. Therefore, i also expected that batch normalization would stabilise the training process and would speed up the convergence. WHile using more convolational layers i expected better validation results, this because the model can learn hierarchical feautures.
+
+* Hypothesis: I expected that adding a dropout would reduce the overfitting problem, especially in bigger networks with more filters/dense units. Therefore, i also expected that batch normalization would stabilise the training process and would speed up the convergence. WHile using more convolational layers i expected better validation results, this because the model can learn hierarchical feautures.
 
 Results:
 
@@ -66,7 +68,8 @@ Batch normalization stablise the activations and offers higher learning rates.
 Too deep networks gave diminishing returns
 MLFLOW comes in really handy when comparing the different runs of the model. And helps visualise hyperparamters.
 3.  **[Hyperparameter rnn](./3-hypertuning-rnn/summary.md)**
-    * During this assignment, I worked with the gesture recognition dataset and carried out several experiments to improve the RNN model.
+
+* During this assignment, I worked with the gesture recognition dataset and carried out several experiments to improve the RNN model.
 
 I started with the basic RNN model, but I quickly noticed that the performance remained very low. With an input of 3 features, a hidden size of 68 and two layers, I was only able to reach an accuracy of about 9 percent, which is barely better than random guessing. From this, I concluded that the model was too simple for the complexity of the dataset.
 
@@ -110,7 +113,8 @@ The experiment confirms my hypothesis. The visual clearly demonstrates that batc
 For future CNN architectures, I recommend always including batch normalization layers. They make the training process more robust and less sensitive to the specific choice of the learning rate.
 
 5.  **[Hackathon Model: Project Cuddlefish](./6-hackathon/project_cuddlefish.md)**
-    ### AI Challenge - Kadaster
+
+### AI Challenge - Kadaster
 
 The Kadaster registers over 100 types of legal events (rechtsfeiten), such as mortgages, seizures, or sales. However, recognizing these automatically is a major challenge because notaries use unstructured text without a fixed format. While standard models successfully identify common events, they fail on the Long Tail rare legal facts that occur infrequently (e.g., fewer than 20 times), making them impossible to learn via traditional training.
 
@@ -140,8 +144,10 @@ We benchmarked 5 different models and identified the top two performers based on
 
 ### Results 
 We successfully established a workflow that allows the system to recognize rare legal facts that the main model misses, with the Qwen and OpenAI models achieving comparable F1 scores (Micro F1 ~0.66).
+
 6.  **[deployment](./5-deployment/summary.md)**
-    # AI Dog name generator
+
+# AI Dog name generator
 With the Straattaal set I created my own dog name generator. This AI model will come up with several new dog names generated based on a list with the most common dog names. 
 
 <img width="1382" height="590" alt="image" src="https://github.com/user-attachments/assets/7ec1fa05-8f07-4420-94d3-a57253de59c5" />
