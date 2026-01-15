@@ -7,8 +7,7 @@ This website is built automatically using GitHub Pages. The main page you're rea
 ## Table of Contents
 
 1.  **[Hyperparameter gridsearch](./1-hypertuning-gridsearch/summary.md)**
-
-* Hypothesis
+Hypothesis
 
 I expected that increasing the number of units and/or epochs would improve accuracy. But there is a point where overfitting is going to occur. Therefore, i als expected that small learning rates yield more stable convergence than larger learning rate.
 
@@ -38,7 +37,7 @@ Tensorbord comes in really handy for monitoring convergence trends.
 
 2.  **[Hyperparameter mlflow](./2-hypertuning-mlflow/summary.md)**
 
-* Hypothesis: I expected that adding a dropout would reduce the overfitting problem, especially in bigger networks with more filters/dense units. Therefore, i also expected that batch normalization would stabilise the training process and would speed up the convergence. WHile using more convolational layers i expected better validation results, this because the model can learn hierarchical feautures.
+Hypothesis: I expected that adding a dropout would reduce the overfitting problem, especially in bigger networks with more filters/dense units. Therefore, i also expected that batch normalization would stabilise the training process and would speed up the convergence. WHile using more convolational layers i expected better validation results, this because the model can learn hierarchical feautures.
 
 Results:
 
